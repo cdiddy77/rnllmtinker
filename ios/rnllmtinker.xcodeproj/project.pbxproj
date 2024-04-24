@@ -12,6 +12,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3797E9BC2BD7FD450014D587 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3797E9BB2BD7FD450014D587 /* Ionicons.ttf */; };
+		379F2D6C2BD87B920049110E /* phi-2-gpu.bin in Resources */ = {isa = PBXBuildFile; fileRef = 379F2D6B2BD87B920049110E /* phi-2-gpu.bin */; };
+		379F2D712BD87BF30049110E /* phi-2-cpu.bin in Resources */ = {isa = PBXBuildFile; fileRef = 379F2D702BD87BF30049110E /* phi-2-cpu.bin */; };
+		379F2D732BD87BF70049110E /* falcon-rw-1b-cpu.bin in Resources */ = {isa = PBXBuildFile; fileRef = 379F2D632BD87A620049110E /* falcon-rw-1b-cpu.bin */; };
+		379F2D742BD87BF70049110E /* gemma-2b-it-cpu.bin in Resources */ = {isa = PBXBuildFile; fileRef = 379F2D642BD87A970049110E /* gemma-2b-it-cpu.bin */; };
+		379F2D752BD87BF70049110E /* gemma-2b-it-gpu.bin in Resources */ = {isa = PBXBuildFile; fileRef = 379F2D662BD87B070049110E /* gemma-2b-it-gpu.bin */; };
+		379F2D762BD87BF70049110E /* stablelm-3b-4e1t-gpu.bin in Resources */ = {isa = PBXBuildFile; fileRef = 379F2D672BD87B440049110E /* stablelm-3b-4e1t-gpu.bin */; };
+		379F2D772BD87BF70049110E /* stablelm-3b-4e1t-cpu.bin in Resources */ = {isa = PBXBuildFile; fileRef = 379F2D6A2BD87B820049110E /* stablelm-3b-4e1t-cpu.bin */; };
+		379F2D782BD87BF70049110E /* falcon-rw-1b-gpu.bin in Resources */ = {isa = PBXBuildFile; fileRef = 379F2D722BD87BF70049110E /* falcon-rw-1b-gpu.bin */; };
 		7699B88040F8A987B510C191 /* libPods-rnllmtinker-rnllmtinkerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnllmtinker-rnllmtinkerTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,6 +47,15 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnllmtinker/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = rnllmtinker/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnllmtinker-rnllmtinkerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnllmtinker-rnllmtinkerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3797E9BB2BD7FD450014D587 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		379F2D632BD87A620049110E /* falcon-rw-1b-cpu.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "falcon-rw-1b-cpu.bin"; sourceTree = "<group>"; };
+		379F2D642BD87A970049110E /* gemma-2b-it-cpu.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "gemma-2b-it-cpu.bin"; sourceTree = "<group>"; };
+		379F2D662BD87B070049110E /* gemma-2b-it-gpu.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "gemma-2b-it-gpu.bin"; sourceTree = "<group>"; };
+		379F2D672BD87B440049110E /* stablelm-3b-4e1t-gpu.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "stablelm-3b-4e1t-gpu.bin"; sourceTree = "<group>"; };
+		379F2D6A2BD87B820049110E /* stablelm-3b-4e1t-cpu.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "stablelm-3b-4e1t-cpu.bin"; sourceTree = "<group>"; };
+		379F2D6B2BD87B920049110E /* phi-2-gpu.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "phi-2-gpu.bin"; sourceTree = "<group>"; };
+		379F2D702BD87BF30049110E /* phi-2-cpu.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "phi-2-cpu.bin"; sourceTree = "<group>"; };
+		379F2D722BD87BF70049110E /* falcon-rw-1b-gpu.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "falcon-rw-1b-gpu.bin"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-rnllmtinker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnllmtinker.debug.xcconfig"; path = "Target Support Files/Pods-rnllmtinker/Pods-rnllmtinker.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rnllmtinker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnllmtinker.release.xcconfig"; path = "Target Support Files/Pods-rnllmtinker/Pods-rnllmtinker.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnllmtinker-rnllmtinkerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnllmtinker-rnllmtinkerTests.debug.xcconfig"; path = "Target Support Files/Pods-rnllmtinker-rnllmtinkerTests/Pods-rnllmtinker-rnllmtinkerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +126,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3797E9BA2BD7FD1F0014D587 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				379F2D632BD87A620049110E /* falcon-rw-1b-cpu.bin */,
+				379F2D722BD87BF70049110E /* falcon-rw-1b-gpu.bin */,
+				379F2D642BD87A970049110E /* gemma-2b-it-cpu.bin */,
+				379F2D662BD87B070049110E /* gemma-2b-it-gpu.bin */,
+				379F2D702BD87BF30049110E /* phi-2-cpu.bin */,
+				379F2D6B2BD87B920049110E /* phi-2-gpu.bin */,
+				379F2D6A2BD87B820049110E /* stablelm-3b-4e1t-cpu.bin */,
+				379F2D672BD87B440049110E /* stablelm-3b-4e1t-gpu.bin */,
+				3797E9BB2BD7FD450014D587 /* Ionicons.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +152,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				3797E9BA2BD7FD1F0014D587 /* Resources */,
 				13B07FAE1A68108700A75B9A /* rnllmtinker */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rnllmtinkerTests */,
@@ -244,7 +279,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				379F2D742BD87BF70049110E /* gemma-2b-it-cpu.bin in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				379F2D6C2BD87B920049110E /* phi-2-gpu.bin in Resources */,
+				379F2D712BD87BF30049110E /* phi-2-cpu.bin in Resources */,
+				379F2D782BD87BF70049110E /* falcon-rw-1b-gpu.bin in Resources */,
+				379F2D752BD87BF70049110E /* gemma-2b-it-gpu.bin in Resources */,
+				379F2D762BD87BF70049110E /* stablelm-3b-4e1t-gpu.bin in Resources */,
+				379F2D732BD87BF70049110E /* falcon-rw-1b-cpu.bin in Resources */,
+				379F2D772BD87BF70049110E /* stablelm-3b-4e1t-cpu.bin in Resources */,
+				3797E9BC2BD7FD450014D587 /* Ionicons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

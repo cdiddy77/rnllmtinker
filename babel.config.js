@@ -1,4 +1,3 @@
-api.cache(false);
 module.exports = {
   presets: ["module:@react-native/babel-preset"],
   plugins: [
@@ -9,5 +8,6 @@ module.exports = {
         path: ".env",
       },
     ],
+    ["react-native-worklets-core/plugin"],
   ],
 };
