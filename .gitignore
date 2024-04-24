@@ -78,3 +78,8 @@ yarn-error.log
 .env.*
 !.env.example
 
+
+# app model files
+ios/Resources/*.bin
+android/app/src/main/assets/*.bin
+modelserver/public/*.bin

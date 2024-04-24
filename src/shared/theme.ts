@@ -148,71 +148,58 @@ const lightTheme = {
   color: lightColors,
   typog: {
     header1: {
-      fontFamily: "DMSans-SemiBold",
       fontSize: 32,
       lineHeight: 32 * LINEHEIGHT_CONST,
     },
     header2: {
-      fontFamily: "DMSans-SemiBold",
       fontSize: 20,
       lineHeight: 20 * LINEHEIGHT_CONST,
     },
     header3: {
-      fontFamily: "DMSans-SemiBold",
       fontSize: 17,
       lineHeight: 17 * LINEHEIGHT_CONST,
     },
     button1: {
-      fontFamily: "DMSans-Regular",
       fontSize: 17,
       lineHeight: 17 * LINEHEIGHT_CONST,
     },
     button2: {
-      fontFamily: "DMSans-Regular",
       fontSize: 16,
       lineHeight: 16 * LINEHEIGHT_CONST,
     },
     button1_contained: {
-      fontFamily: "DMSans-Regular",
       fontSize: 17,
       lineHeight: 17 * LINEHEIGHT_CONST,
       color: lightColors.lightText,
     },
     button1_bare: {
-      fontFamily: "DMSans-Regular",
       fontSize: 17,
       lineHeight: 17 * LINEHEIGHT_CONST,
       color: lightColors.darkText,
     },
     button2_contained: {
-      fontFamily: "DMSans-Regular",
       fontSize: 16,
       lineHeight: 16 * LINEHEIGHT_CONST,
       color: lightColors.lightText,
     },
     button2_bare: {
-      fontFamily: "DMSans-Regular",
       fontSize: 16,
       lineHeight: 16 * LINEHEIGHT_CONST,
       color: lightColors.darkText,
     },
     body1: {
-      fontFamily: "DMSans-Regular",
       fontSize: 17,
       lineHeight: 17 * LINEHEIGHT_CONST,
     },
     body2: {
-      fontFamily: "DMSans-Regular",
       fontSize: 16,
       lineHeight: 16 * LINEHEIGHT_CONST,
     },
     body3: {
-      fontFamily: "DMSans-Regular",
       fontSize: 12,
       lineHeight: 12 * LINEHEIGHT_CONST,
     },
     menu1: {
-      fontFamily: "DMSans-Regular",
       fontSize: 18,
       lineHeight: 18 * LINEHEIGHT_CONST,
     },

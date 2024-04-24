@@ -3,11 +3,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: [
-      "./tsconfig.json",
-      "docsite/tsconfig.json",
-      "examples/objectdetection/tsconfig.json",
-    ],
+    project: ["./tsconfig.json"],
     ecmaFeatures: {
       jsx: true,
     },
@@ -18,6 +14,7 @@ module.exports = {
     "scripts",
     "lib",
     "docs",
+    "modelserver",
     "app.plugin.js",
     ".eslintrc.js",
     ".prettierrc.js",

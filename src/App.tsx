@@ -4,11 +4,12 @@ import {
   useNavigationContainerRef,
 } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeScreen } from "./screens/HomeScreen";
+import { HomeScreen } from "./screens/HomeScreen/HomeScreen";
 import { SettingsScreen } from "./screens/SettingsScreen/SettingsScreen";
 import { RootParamList } from "./shared/navigation";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { OcrScreen } from "./screens/OcrScreen/OcrScreen";
 // import { SafeAreaView } from "react-native";
 
 const Tab = createBottomTabNavigator<RootParamList>();
@@ -27,6 +28,16 @@ export default function App() {
                 // eslint-disable-next-line react/no-unstable-nested-components
                 tabBarIcon: ({ color, size }) => (
                   <Ionicons name="home" color={color} size={size} />
+                ),
+              }}
+            />
+            <Tab.Screen
+              name="Ocr"
+              component={OcrScreen}
+              options={{
+                // eslint-disable-next-line react/no-unstable-nested-components
+                tabBarIcon: ({ color, size }) => (
+                  <Ionicons name="settings" color={color} size={size} />
                 ),
               }}
             />
