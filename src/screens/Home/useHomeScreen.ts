@@ -11,6 +11,7 @@ export function useHomeScreen() {
   const [partialResponse, setPartialResponse] = React.useState<Message>();
 
   const llmInference = useLlmInference({
+    storageType: "asset",
     modelName: "falcon-rw-1b-cpu.bin",
   });
 
@@ -21,25 +22,33 @@ export function useHomeScreen() {
     setMessages((prev) => [...prev, { role: "user", content: prompt }]);
     setPartialResponse({ role: "assistant", content: "" });
     setPrompt("");
-    const response = await llmInference.generateResponse(
-      prompt,
-      (partial) => {
-        setPartialResponse((prev) => ({
-          role: "assistant",
-          content: (prev?.content ?? "") + partial,
-        }));
-      },
-      (error) => {
-        console.error(error);
-        setMessages((prev) => [
-          ...prev,
-          { role: "error", content: `${error}` },
-        ]);
-        setPartialResponse(undefined);
-      }
-    );
-    setPartialResponse(undefined);
-    setMessages((prev) => [...prev, { role: "assistant", content: response }]);
+    try {
+      const response = await llmInference.generateResponse(
+        prompt,
+        (partial) => {
+          setPartialResponse((prev) => ({
+            role: "assistant",
+            content: (prev?.content ?? "") + partial,
+          }));
+        },
+        (error) => {
+          console.error(error);
+          setMessages((prev) => [
+            ...prev,
+            { role: "error", content: `${error}` },
+          ]);
+          setPartialResponse(undefined);
+        }
+      );
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: response },
+      ]);
+    } catch (e) {
+      setMessages((prev) => [...prev, { role: "error", content: `${e}` }]);
+    } finally {
+      setPartialResponse(undefined);
+    }
   }, [llmInference, prompt]);
 
   return React.useMemo(

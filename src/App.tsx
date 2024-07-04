@@ -4,12 +4,14 @@ import {
   useNavigationContainerRef,
 } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeScreen } from "./screens/HomeScreen/HomeScreen";
-import { SettingsScreen } from "./screens/SettingsScreen/SettingsScreen";
+import { HomeScreen } from "./screens/Home/HomeScreen";
+import { SettingsScreen } from "./screens/Settings/SettingsScreen";
 import { RootParamList } from "./shared/navigation";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { OcrScreen } from "./screens/OcrScreen/OcrScreen";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { OcrScreen } from "./screens/Ocr/OcrScreen";
+import { View } from "react-native";
+import { ModelsScreen } from "./screens/Models/ModelsScreen";
 // import { SafeAreaView } from "react-native";
 
 const Tab = createBottomTabNavigator<RootParamList>();
@@ -18,7 +20,7 @@ export default function App() {
   const navigationRef = useNavigationContainerRef<RootParamList>();
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1 }}>
+      <View style={{ flex: 1 }}>
         <NavigationContainer ref={navigationRef}>
           <Tab.Navigator screenOptions={{ headerShown: false }}>
             <Tab.Screen
@@ -42,6 +44,16 @@ export default function App() {
               }}
             />
             <Tab.Screen
+              name="Models"
+              component={ModelsScreen}
+              options={{
+                // eslint-disable-next-line react/no-unstable-nested-components
+                tabBarIcon: ({ color, size }) => (
+                  <Ionicons name="settings" color={color} size={size} />
+                ),
+              }}
+            />
+            <Tab.Screen
               name="Settings"
               component={SettingsScreen}
               options={{
@@ -53,7 +65,7 @@ export default function App() {
             />
           </Tab.Navigator>
         </NavigationContainer>
-      </SafeAreaView>
+      </View>
     </SafeAreaProvider>
   );
 }
