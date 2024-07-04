@@ -17,16 +17,17 @@ import { MessageView } from "./MessageView";
 import theme from "../../shared/theme";
 import * as strogging from "../../shared/strogging";
 import { useKeyboardVisible } from "../../shared/hooks";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export function HomeScreen() {
   const hook = useHomeScreen();
   strogging.log("home", { kb: Keyboard.isVisible() });
   const keyboardVisible = useKeyboardVisible();
   return (
-    <View style={styles.root}>
+    <SafeAreaView style={styles.root}>
       <KeyboardAvoidingView
         keyboardVerticalOffset={0}
-        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        behavior="padding"
         style={styles.keyboardRoot}
       >
         <TouchableWithoutFeedback
@@ -80,6 +81,6 @@ export function HomeScreen() {
           </Pressable>
         </View>
       </KeyboardAvoidingView>
-    </View>
+    </SafeAreaView>
   );
 }

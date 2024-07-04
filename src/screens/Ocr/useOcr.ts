@@ -5,24 +5,11 @@ import {
   useCameraFormat,
   useCameraPermission,
   useFrameProcessor,
-  VisionCameraProxy,
-  Frame,
 } from "react-native-vision-camera";
-import { type OCRFrame } from "vision-camera-ocr";
+import { scanOCR, type OCRFrame } from "vision-camera-ocr";
 import { Worklets, useSharedValue } from "react-native-worklets-core";
 import * as strogging from "../../shared/strogging";
 import { LayoutChangeEvent, Platform } from "react-native";
-
-const plugin = VisionCameraProxy.initFrameProcessorPlugin("scanOCR");
-
-export function scanOCR(frame: Frame): OCRFrame {
-  "worklet";
-  if (plugin == null) {
-    throw new Error('Failed to load Frame Processor Plugin "scanOCR"!');
-  }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return plugin.call(frame) as any;
-}
 
 export function useOcr() {
   const cameraPermission = useCameraPermission();
